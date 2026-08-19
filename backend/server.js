@@ -10,9 +10,14 @@ app.use(express.json());
 
 // API Health Route
 app.get('/api/health', (req, res) => {
-    res.json({ status: 'active', message: 'Dragon Guard Backend is operational!' });
+  res.json({ status: 'active', message: 'Dragon Guard Backend is operational!' });
+});
+
+// Root Route
+app.get('/', (req, res) => {
+  res.send('Dragon Guard API is running smoothly!');
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
