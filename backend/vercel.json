@@ -18,11 +18,9 @@ app.get('/', (req, res) => {
   res.send('Dragon Guard API is running smoothly!');
 });
 
-// Export app for Vercel Serverless Function compatibility
-module.exports = app;
-
 if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
 }
+module.exports = app;D
