@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dragon Guard App</title>
+  <title>Dragon Guard Cybersecurity Suite</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Dragon Guard Cybersecurity Suite</h1>
-  <button id="check-btn">Check Server Health</button>
-  <p id="status-output"></p>
+
+  <section>
+    <h3>System Status</h3>
+    <button id="check-btn">Check Server Health</button>
+    <p id="status-output"></p>
+  </section>
+
+  <section>
+    <h3>1. Password Strength Analyzer</h3>
+    <input type="password" id="pass-input" placeholder="Enter password...">
+    <button id="pass-btn">Analyze Password</button>
+    <p id="pass-output"></p>
+  </section>
+
+  <section>
+    <h3>2. Security Header Inspector</h3>
+    <input type="text" id="header-input" placeholder="example.com">
+    <button id="header-btn">Scan Headers</button>
+    <pre id="header-output"></pre>
+  </section>
+
+  <section>
+    <h3>3. URL Threat Scanner</h3>
+    <input type="text" id="url-input" placeholder="Enter site link...">
+    <button id="url-btn">Scan URL</button>
+    <pre id="url-output"></pre>
+  </section>
 
   <script src="app.js"></script>
 </body>
