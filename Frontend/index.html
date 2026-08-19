@@ -7,34 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Dragon Guard Cybersecurity Suite</h1>
+  <h1>Dragon Guard Suite</h1>
 
-  <section>
-    <h3>System Status</h3>
-    <button id="check-btn">Check Server Health</button>
-    <p id="status-output"></p>
-  </section>
+  <div class="dashboard-grid">
+    <div class="card">
+      <h3>System Status</h3>
+      <div class="input-group">
+        <button id="check-btn">Check Health</button>
+      </div>
+      <p id="status-output">System idle...</p>
+    </div>
 
-  <section>
-    <h3>1. Password Strength Analyzer</h3>
-    <input type="password" id="pass-input" placeholder="Enter password...">
-    <button id="pass-btn">Analyze Password</button>
-    <p id="pass-output"></p>
-  </section>
+    <div class="card">
+      <h3>1. Password Strength</h3>
+      <div class="input-group">
+        <input type="password" id="pass-input" placeholder="Enter password...">
+        <button id="pass-btn">Analyze</button>
+      </div>
+      <p id="pass-output"></p>
+    </div>
 
-  <section>
-    <h3>2. Security Header Inspector</h3>
-    <input type="text" id="header-input" placeholder="example.com">
-    <button id="header-btn">Scan Headers</button>
-    <pre id="header-output"></pre>
-  </section>
+    <div class="card">
+      <h3>2. Header Inspector</h3>
+      <div class="input-group">
+        <input type="text" id="header-input" placeholder="example.com">
+        <button id="header-btn">Scan</button>
+      </div>
+      <pre id="header-output">Awaiting scan...</pre>
+    </div>
 
-  <section>
-    <h3>3. URL Threat Scanner</h3>
-    <input type="text" id="url-input" placeholder="Enter site link...">
-    <button id="url-btn">Scan URL</button>
-    <pre id="url-output"></pre>
-  </section>
+    <div class="card">
+      <h3>3. Threat Scanner</h3>
+      <div class="input-group">
+        <input type="text" id="url-input" placeholder="Enter target URL...">
+        <button id="url-btn">Scan</button>
+      </div>
+      <pre id="url-output">Awaiting scan...</pre>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
